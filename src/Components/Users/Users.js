@@ -33,11 +33,19 @@ const Users = () => {
           "loading . . ."
         ) : (
           <>
-            <img src={user.avatar} alt="" />
-            <h2>
-              Name: {user.first_name} {user.last_name}
-            </h2>
-            <p>Email: {user.email}</p>
+            {user.first_name ? (
+              <>
+                <img src={user.avatar} alt="" />
+                <h2>
+                  Name: {user.first_name} {user.last_name}
+                </h2>
+                <p>Email: {user.email}</p>
+              </>
+            ) : (
+              <p>
+                <strong>CLICK ANY BUTTON TO SHOW USER INFORMATION</strong>
+              </p>
+            )}
           </>
         )}
       </div>
