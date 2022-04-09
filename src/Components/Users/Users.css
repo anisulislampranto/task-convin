@@ -1,0 +1,11 @@
+.user-card{
+    box-shadow: 1px 2px 2px 2px gainsboro;
+    width: 200px;
+    padding: 10px;
+    justify-self: center;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+.user-card img{
+    width: 100%;
+}
